@@ -1,70 +1,50 @@
 
-## `hrbrthemes` : Additional Themes and Theme Components for ‘ggplot2’
+`hrbrthemes` : Additional Themes and Theme Components for 'ggplot2'
+-------------------------------------------------------------------
 
-[![Project Status: Active - The project has reached a stable, usable
-state and is being actively
-developed.](http://www.repostatus.org/badges/0.1.0/active.svg)](http://www.repostatus.org/#active)
-[![codecov](https://codecov.io/gh/hrbrmstr/hrbrthemes/branch/master/graph/badge.svg)](https://codecov.io/gh/hrbrmstr/hrbrthemes)
-[![Travis-CI Build
-Status](https://travis-ci.org/hrbrmstr/hrbrthemes.svg?branch=master)](https://travis-ci.org/hrbrmstr/hrbrthemes)
-[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/hrbrthemes)](https://cran.r-project.org/package=hrbrthemes)
-![downloads](http://cranlogs.r-pkg.org/badges/grand-total/hrbrthemes)
-<!-- [![keybase verified](https://img.shields.io/badge/keybase-verified-brightgreen.svg)](https://gist.github.com/hrbrmstr/be2f2c14fd78cac24697) -->
+[![Project Status: Active - The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/0.1.0/active.svg)](http://www.repostatus.org/#active) [![codecov](https://codecov.io/gh/hrbrmstr/hrbrthemes/branch/master/graph/badge.svg)](https://codecov.io/gh/hrbrmstr/hrbrthemes) [![Travis-CI Build Status](https://travis-ci.org/hrbrmstr/hrbrthemes.svg?branch=master)](https://travis-ci.org/hrbrmstr/hrbrthemes) [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/hrbrthemes)](https://cran.r-project.org/package=hrbrthemes) ![downloads](http://cranlogs.r-pkg.org/badges/grand-total/hrbrthemes) <!-- [![keybase verified](https://img.shields.io/badge/keybase-verified-brightgreen.svg)](https://gist.github.com/hrbrmstr/be2f2c14fd78cac24697) -->
 
------
+------------------------------------------------------------------------
 
-This is a very focused package that provides typography-centric themes
-and theme components for ggplot2. It’s a an extract/riff of
-[`hrbrmisc`](http://github.com/hrbrmstr/hrbrmisc) created by request.
+This is a very focused package that provides typography-centric themes and theme components for ggplot2. It's a an extract/riff of [`hrbrmisc`](http://github.com/hrbrmstr/hrbrmisc) created by request.
 
-The core theme: `theme_ipsum` (“ipsum” is Latin for “precise”) uses
-Arial Narrow which should be installed on practically any modern system,
-so it’s “free”-ish. This font is condensed, has solid default kerning
-pairs and geometric numbers. That’s what I consider the “font trifecta”
-must-have for charts. An additional quality for fonts for charts is that
-they have a diversity of weights. Arial Narrow (the one on most systems,
-anyway) does not have said diversity but this quality is not (IMO) a
-“must have”.
+The core theme: `theme_ipsum` ("ipsum" is Latin for "precise") uses Arial Narrow which should be installed on practically any modern system, so it's "free"-ish. This font is condensed, has solid default kerning pairs and geometric numbers. That's what I consider the "font trifecta" must-have for charts. An additional quality for fonts for charts is that they have a diversity of weights. Arial Narrow (the one on most systems, anyway) does not have said diversity but this quality is not (IMO) a "must have".
 
 The following functions are implemented/objects are exported:
 
 Core themes & scales:
 
-  - `theme_ipsum`: Arial Narrow-based theme
-  - `theme_ipsum_ps`: IBM Plex Sans-based theme
-  - `theme_ipsum_rc`: Roboto Condensed-based theme
-  - `theme_ipsum_tw`: Titillium Web-based theme
-  - `scale_x_comma` / `scale_y_comma`: Comma format for axis text and
-    better `expand` defaults (you need to set limits)
-  - `scale_x_percent` / `scale_y_percent`: Percent format for axis text
-    and `expand=c(0,0)` (you need to set limits)
-  - `scale_color_ipsum` / `scale_fill_ipsum` / `ipsum_pal`: A muted
-    discrete color palette with 9 colors
+-   `theme_ipsum`: Arial Narrow-based theme
+-   `theme_ipsum_ps`: IBM Plex Sans-based theme
+-   `theme_ipsum_rc`: Roboto Condensed-based theme
+-   `theme_ipsum_tw`: Titillium Web-based theme
+-   `theme_ipsum_mp`: Mave Pro-based theme
+-   `scale_x_comma` / `scale_y_comma`: Comma format for axis text and better `expand` defaults (you need to set limits)
+-   `scale_x_percent` / `scale_y_percent`: Percent format for axis text and `expand=c(0,0)` (you need to set limits)
+-   `scale_color_ipsum` / `scale_fill_ipsum` / `ipsum_pal`: A muted discrete color palette with 9 colors
 
 Utilities:
 
-  - `flush_ticks`: Makes axis text labels flush on the ends
-  - `gg_check`: Spell check ggplot2 plot labels
-  - `update_geom_font_defaults`: Update font defaults for text geoms
-    (the default is — unsurprisingly — Arial Narrow)
+-   `flush_ticks`: Makes axis text labels flush on the ends
+-   `gg_check`: Spell check ggplot2 plot labels
+-   `update_geom_font_defaults`: Update font defaults for text geoms (the default is — unsurprisingly — Arial Narrow)
 
 R Markdown:
 
-  - `ipsum`: minimalistic HTML template
-  - `ipsum_pdf`: everything you need to use hrbrthemes in PDFs
+-   `ipsum`: minimalistic HTML template
+-   `ipsum_pdf`: everything you need to use hrbrthemes in PDFs
 
 The following global variables are now in your namespace:
 
-  - `font_an`: a short global alias for “`Arial Narrow`”
-  - `font_ps`: a short global alias for “`IBMPlexSans`”
-  - `font_ps_light`: a short global alias for “`IBMPlexSans-Light`”
-  - `font_rc`: a short global alias for “`Roboto Condensed`”
-  - `font_rc_light`: a short global alias for “`Roboto Condensed Light`”
-  - `font_tw`: a short global alias for “`Titillium Web`”
-  - `font_tw_bold`: a short global alias for "`Titillium Web Bold`" 
-      (NOTE: may be an issue with name on macOS 10.13)
-  - `font_tw_light`: a short global alias for "`Titillium Web Light`" 
-      (NOTE: may be an issue with name on macOS 10.13)
+-   `font_an`: a short global alias for "`Arial Narrow`"
+-   `font_ps`: a short global alias for "`IBMPlexSans`"
+-   `font_ps_light`: a short global alias for "`IBMPlexSans-Light`"
+-   `font_rc`: a short global alias for "`Roboto Condensed`"
+-   `font_rc_light`: a short global alias for "`Roboto Condensed Light`"
+-   `font_tw`: a short global alias for "`Titillium Web`"
+-   `font_tw_bold`: a short global alias for "`Titillium Web Bold`" (NOTE: may be an issue with name on macOS 10.13)
+-   `font_tw_light`: a short global alias for "`Titillium Web Light`" (NOTE: may be an issue with name on macOS 10.13)
+-   `font_mp`: a short global alias for "`Maven Pro`"
 
 ### Installation
 
@@ -128,11 +108,7 @@ ggplot(mpg, aes(displ, hwy)) +
     caption="Source: hrbrthemes & IBM"
   ) +
   theme_ipsum_ps(grid="XY", axis="xy") +
-  theme(legend.position="none") -> gg
-
-flush_ticks(gg)
-## theme(axis.text.x=element_text(hjust=c(0, rep(0.5, 6), 1))) +
-## theme(axis.text.y=element_text(vjust=c(0, rep(0.5, 3), 1)))
+  theme(legend.position="none")
 ```
 
 <img src="README_figs/README-unnamed-chunk-7-1.png" width="960" />
@@ -153,14 +129,24 @@ ggplot(mpg, aes(displ, hwy)) +
     caption="Source: hrbrthemes & Google"
   ) +
   theme_ipsum_tw(grid="XY", axis="xy") +
-  theme(legend.position="none") -> gg
-
-flush_ticks(gg)
-## theme(axis.text.x=element_text(hjust=c(0, rep(0.5, 6), 1))) +
-## theme(axis.text.y=element_text(vjust=c(0, rep(0.5, 3), 1)))
+  theme(legend.position="none")
 ```
 
 <img src="README_figs/README-unnamed-chunk-8-1.png" width="960" />
+
+### Maven Pro
+
+``` r
+ggplot(mtcars, aes(mpg, wt)) +
+  geom_point() +
+  labs(x = "Fuel effiiency (mpg)", y = "Weight (tons)",
+       title = "Seminal ggplot2 scatterplot example",
+       subtitle = "A plot that is only useful for demonstration purposes",
+       caption = "Brought to you by the letter 'g'") + 
+  theme_ipsum_mp()
+```
+
+<img src="README_figs/README-unnamed-chunk-9-1.png" width="672" />
 
 ### Scales (Color/Fill)
 
@@ -175,7 +161,7 @@ ggplot(mtcars, aes(mpg, wt)) +
   theme_ipsum_rc()
 ```
 
-<img src="README_figs/README-unnamed-chunk-9-1.png" width="672" />
+<img src="README_figs/README-unnamed-chunk-10-1.png" width="672" />
 
 ### Scales (Axis)
 
@@ -192,7 +178,7 @@ count(mpg, class) %>%
   theme_ipsum(grid="Y")
 ```
 
-<img src="README_figs/README-unnamed-chunk-10-1.png" width="672" />
+<img src="README_figs/README-unnamed-chunk-11-1.png" width="672" />
 
 ``` r
 ggplot(uspopage, aes(x=Year, y=Thousands, fill=AgeGroup)) + 
@@ -208,7 +194,7 @@ ggplot(uspopage, aes(x=Year, y=Thousands, fill=AgeGroup)) +
   theme(legend.position="bottom")
 ```
 
-<img src="README_figs/README-unnamed-chunk-11-1.png" width="672" />
+<img src="README_figs/README-unnamed-chunk-12-1.png" width="672" />
 
 ``` r
 update_geom_font_defaults(font_rc_light)
@@ -229,7 +215,7 @@ count(mpg, class) %>%
   theme_ipsum_rc(grid="X")
 ```
 
-<img src="README_figs/README-unnamed-chunk-12-1.png" width="672" />
+<img src="README_figs/README-unnamed-chunk-13-1.png" width="672" />
 
 ### Spellcheck ggplot2 labels
 
@@ -250,7 +236,7 @@ gg_check(gg)
 ## Possible misspelled words in [caption]: (captien)
 ```
 
-<img src="README_figs/README-unnamed-chunk-13-1.png" width="672" />
+<img src="README_figs/README-unnamed-chunk-14-1.png" width="672" />
 
 ### Test Results
 
@@ -258,7 +244,7 @@ gg_check(gg)
 library(hrbrthemes)
 
 date()
-## [1] "Tue Jan  9 15:44:53 2018"
+## [1] "Fri Mar  9 12:03:09 2018"
 
 devtools::test()
 ## ✔ | OK F W S | Context
@@ -274,26 +260,33 @@ devtools::test()
 ⠧ |  8       | basic functionality
 ⠇ |  9       | basic functionality
 ⠏ | 10       | basic functionality
-✔ | 10       | basic functionality [2.0 s]
+✔ | 10       | basic functionality [3.5 s]
 ## 
 ⠏ |  0       | themes
+⠋ |  0 1     | themes
+✖ |  0 1     | themes
+## ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+## test-themes.R:10: error: themes are correct
+## there is no package called 'vdiffr'
+## 1: vdiffr::expect_doppelganger at /home/olga/Documents/hrbrthemes/tests/testthat/test-themes.R:10
+## 2: getExportedValue(pkg, name)
+## 3: asNamespace(ns)
+## 4: getNamespace(ns)
+## 5: tryCatch(loadNamespace(name), error = function(e) stop(e))
+## 6: tryCatchList(expr, classes, parentenv, handlers)
+## 7: tryCatchOne(expr, names, parentenv, handlers[[1L]])
+## 8: value[[3L]](cond)
+## ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 ## 
-⠋ |  1       | themes
+## ══ Results ══════════════════════════════════════════════════════════════════════════════════════════════════════════════
+## Duration: 3.5 s
 ## 
-⠙ |  2       | themes
-✔ |  2       | themes [0.7 s]
-## 
-## ══ Results ════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
-## Duration: 2.8 s
-## 
-## OK:       12
-## Failed:   0
+## OK:       10
+## Failed:   1
 ## Warnings: 0
 ## Skipped:  0
 ```
 
 ### Code of Conduct
 
-Please note that this project is released with a [Contributor Code of
-Conduct](CONDUCT.md). By participating in this project you agree to
-abide by its terms.
+Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.
